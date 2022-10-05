@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1_Mozza_Bar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--Imagen o Logotipo MOZZABAR en el encabezado-->
+            <!-- <img src="" alt=""> -->
+            <!--Menu en el encabezado-->
+            <ul>
+                <li>Home</li>
+                <li>Concepto</li>
+                <li>Fotos</li>
+                <li>Menú</li>
+                <li>Reservas</li>
+                <li>Blog</li>
+                <li>Contactos</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <!-- Home page -->
+        <section>    
+            <article>
+                <h2>Descubre</h2>
+                <h1>Mozza bar</h1>
+                <h3>We are open</h3>
+            </article>
+            <!--Imagen de fondo "Home page"-->
+            <!-- <img src="" alt=""> -->
+        </section>
+        <!-- Concepto -->
+        <section>
+            <article>
+                <h3>Concepto</h3>
+                <p>"Situado en pleno Barrio de Salamanca, Mozza Bar es todo sabor y buen ambiente."</p>
+                <p>"Saborea algunos de los platos más populares de la gastronomía española y disfruta de nuestro guiño a la cocina internacional, que incluye algunas de las recetas más famosas de la cocina italiana y asiática."</p>
+                <p>"Una combinación que convierte nuestro restaurante, en una opción estupenda para todos los gustos."</p>
+                <p>"Siendo fieles nuestros valores y raíces, elaboramos todos nuestros platos con productos frescos y de temporada, para que la calidad y el sabor sean siempre lo principal."</p>
+                <p>"Queremos hacerte sentir como en casa, por eso, la decoración y el ambiente de nuestro restaurante es acogedor y relajado. ¿Nuestro objetivo? Convertir cualquier comida o cena en una experiencia gastronómica completa."</p>
+                <p>"Y para los más disfrutones… la terraza es perfecta. Solo necesitas buena compañía y ganas de picar algo o por qué no, tomar unas copas."</p>
+            </article>
+            <!--Imagen de fondo "Concepto"-->
+            <!-- <img src="" alt=""> -->
+        </section>
+        <!-- FOTOS -->
+        <section>
+            <!-- Varias imagenes del restaurante -->
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+        </section>
+        <!-- LA CARTA -->
+        <section>
+            <nav>
+                <h3>Carta</h3>
+                <ul>
+                    <li>Desayunos</li>
+                    <li>Carta</li>
+                    <li>Cocktails</li>
+                </ul>
+            </nav>
+            <!-- Imagenes de la carta -->
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <div><!-- <img src="" alt=""> --></div>
+            <a href="#">Ver la carta de desayunos</a>
+            
+            <!-- Reservas -->
+        <form>
+            <h3>Reservas</h3>
+            <fieldset>
+                <legend>
+                    <h4>Datos de reserva</h4>
+                </legend>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha" required>
+                    <label for="hora">Hora</label>
+                    <input type="time" min="13:30" max="22:30" step=0:30 required>
+                    <label for="comensales">Número de personas</label>
+                    <input type="number" name="numero_personas" id="comensales" min=1 max=8 required placeholder="comensales min=1 max=8">  
+                    <label for="mesa">Tipo de mesa</label>
+                    <select name="tipo_de_mesa" id="mesa" autofocus size="0" required>
+                        <option value="mesa_Salón">Salón</option>
+                        <option value="mesa_TerrazaC">Terraza Cubierta</option>
+                        <option value="mesa_TerrazaE">Terraza Exterior</option>
+                        <option value="mesa_Todas">Todas las zonas</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h4>Datos personales</h4>
+                </legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="Nombre" id="nombre" required placeholder="Nombre">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="Apellidos" id="apellidos" required placeholder="Apellidos">
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" required placeholder="email">
+                    <label for="cod_pais">Código de país:</label>
+                    <input type="number" name="Código_país" id="cod_pais" min=0 placeholder="Código de país">
+                    <label for="telef">Teléfono:</label>
+                    <input type="tel" name="Teléfono" id="telef" required placeholder="Teléfono">
+                    <legend>¿Tiene algún comensal alguna intolerancia o alergia?</legend>
+                    <label for="alergias_Si">Si</label>
+                    <input type="radio" name="intolerancia_alergia" id="alergias_Si" value="Si">
+                    <label for="alergias_No">No</label>
+                    <input type="radio" name="intolerancia_alergia" id="alergias_No" value="No" checked>
+            </fieldset>
+            <fieldset>
+                <legend>
+                <h4>Aceptacion de condiciones y LOPD</h4>
+                </legend>
+                    <label for="condiciones">Acepto las condiciones de uso, política de privacidad y aviso legal</label>
+                    <input type="checkbox" name="Acepto_condiciones" id="condiciones" required>
+                    <label for="lopd">Consiento el tratamiento de datos personales:</label>
+                    <input type="checkbox" name="Consiento_datos_personales" id="lopd" required>
+                    <label for="comunic">Consiento la recepción de comunicaciones del restaurante por e-mail y/o SMS con fines comerciales</label>
+                    <input type="checkbox" name="Consiento_recepción_com_comerciales" id="comunic" required>
+            </fieldset>
+            <button type="submit">Reservar</button>
+            <section>
+                <article>
+                    <p>MOZZABAR FOOD & DRINKS</p>
+                    <P>Conde de Peñalver 64</P>
+                    <p>28006 - Madrid</p>
+                    <p>Abrimos de lunes a domingo de 07:30 a 01:30</p>
+                </article>
+            </section>
+
+        </form>>
+        <!-- BLOG -->
+        <section>
+            <h3>Blog</h3>
+            <article>
+                <p>Mozza bar</p>
+                <p>03/06/2014</p>
+                <p>Mozza bar abre nueva terraza de verano en Bombay Lounge</p>
+                <p>Este viernes 6 de Junio Mozza Bar estrena una nueva terraza en Bombay Lounge</p>
+            </article>
+            <article>
+                <p>Mozza bar</p>
+                <p>17/03/2014</p>
+                <p>Promoción especial: Tarta & Cocktail 6,90E</p>
+            </article>
+            <article>
+                <p>Mozza bar</p>
+                <p>02/03/2014</p>
+                <p>Mozza bar: Brunch 2 de Marzo</p>
+            </article>
+            <button type="button">Ver todas las entradas</button>
+        </section>
+        <section>
+            <article>
+                <p>Ven Cuando Quieras</p>
+                <p>910 258 327</p>
+                <p>hola@mozzabar.es</p>
+            </article>
+            <article>
+                <p>Síguenos</p>
+                <button type="button">Facebook</button>
+                <button type="button">Instagram</button>
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+         <!--Imagen o Logotipo MOZZABAR en el footer-->
+            <!-- <img src="" alt=""> -->
+            <!--Menu en el footer-->
+        <section>
+            <article>
+                <p>Enlaces de interes</p>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Cookies</a>
+            </article>
+            <article>
+                <p>Horarios</p>
+                <p>Lunes a Domingo</p>
+                <p>07:30 - 01:30</p>
+            </article>
+            <article>
+                <p>Contacto</p>
+                <p>c/Conde de Peñalver 64
+                    28060 - Madrid
+                </p>
+                <p>910 258 327</p>
+                <p>hola@mozzabar.es</p>
+            </article>
+            <h5>©2017. Todos los derechos reservados</h5>
+        </section>
+    </footer>
+    
+</body>
+</html>
